@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <!--配置mybatis全局属性-->
+    <settings>
+        <!--允许JDBC支持自动生成主键，需要驱动支持，如果设为true，
+        则强制自动生成主键，尽管一些驱动不支持
+        -->
+        <setting name="useGeneratedKeys" value="true" />
+        <!--
+            使用列标签代替列名，即别名，默认true
+        -->
+        <setting name="useColumnLabel" value="true"/>
+        <!--
+            是否开启自动驼峰式命名规则映射，默认false
+        -->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+
+</configuration>
